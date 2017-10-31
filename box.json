@@ -1,37 +1,43 @@
 {
-    "name": "ContentBox Clustered Captcha",
-    "version": "1.0.0",
-    "slug": "contentbox-captcha",
-    "location": "contentbox-modules/contentbox-captcha#v1.0.0",
-    "author": "Ortus Solutions",
-    "homepage": "https: //github.com/contentbox-modules/contentbox-captcha",
-    "documentation": "https: //github.com/contentbox-modules/contentbox-captcha",
-    "repository": {
-        "type": "git",
-        "URL": "https: //github.com/contentbox-modules/contentbox-captcha"
+    "name":"ContentBox Clustered Captcha",
+    "version":"1.0.0",
+    "slug":"contentbox-captcha",
+    "location":"contentbox-modules/contentbox-captcha#v1.0.0",
+    "author":"Ortus Solutions",
+    "homepage":"https: //github.com/contentbox-modules/contentbox-captcha",
+    "documentation":"https: //github.com/contentbox-modules/contentbox-captcha",
+    "repository":{
+        "type":"git",
+        "URL":"https: //github.com/contentbox-modules/contentbox-captcha"
     },
-    "bugs": "https: //github.com/contentbox-modules/contentbox-captcha/issues",
-    "shortDescription": "This module will produce cluster safe captcha security codes for comments or a-la-carte security",
-    "type": "contentbox-modules",
-    "license": [{
-        "type": "Apache2",
-        "URL": "http://www.apache.org/licenses/LICENSE-2.0"
-    }],
-    "contributors": [
-
+    "bugs":"https: //github.com/contentbox-modules/contentbox-captcha/issues",
+    "shortDescription":"This module will produce cluster safe captcha security codes for comments or a-la-carte security",
+    "type":"contentbox-modules",
+    "license":[
+        {
+            "type":"Apache2",
+            "URL":"http://www.apache.org/licenses/LICENSE-2.0"
+        }
     ],
-    "dependencies": {
-
+    "contributors":[
+        
+    ],
+    "dependencies":{
+        
     },
-    "devDependencies": {},
-    "installPaths": {},
-    "ignore": [
+    "devDependencies":{
+        
+    },
+    "installPaths":{
+        
+    },
+    "ignore":[
         "**/.*",
         "tests",
         "builds/**"
     ],
-    "scripts": {
-        "postVersion": "package set location='contentbox-modules/contentbox-captcha#v`package version`'",
-        "postPublish": "!git push --follow-tags"
+    "scripts":{
+        "postVersion":"package set location='contentbox-modules/contentbox-captcha#v`package version`'",
+        "postPublish":"!git push --follow-tags"
     }
 }
