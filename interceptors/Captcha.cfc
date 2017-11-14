@@ -43,10 +43,14 @@ component extends="coldbox.system.Interceptor" {
         * intercept comment post to validate captcha
         */
         function cbui_preCommentPost( event, interceptData, buffer, rc, prc ){
-            if( structKeyExists(  rc, "captchacode" ) 
-                && 
-                !captchaService.validate( rc.captchacode ) 
-            ){
+            // Only show if not logged in.
+            if( prc.oCurrentAuthor.isLoggedIn() ){
+                return;
+            }
+
+            param name="rc.captchacode" default="";
+
+            if( !captchaService.validate( rc.captchacode ) ){
                 arrayAppend( arguments.interceptData.commentErrors, "Invalid security code. Please try again." );
             }
         }
