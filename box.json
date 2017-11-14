@@ -1,8 +1,8 @@
 {
     "name":"ContentBox Clustered Captcha",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "slug":"contentbox-captcha",
-    "location":"contentbox-modules/contentbox-captcha#v1.0.0",
+    "location":"contentbox-modules/contentbox-captcha#v1.0.1",
     "author":"Ortus Solutions",
     "homepage":"https: //github.com/contentbox-modules/contentbox-captcha",
     "documentation":"https: //github.com/contentbox-modules/contentbox-captcha",
@@ -19,18 +19,10 @@
             "URL":"http://www.apache.org/licenses/LICENSE-2.0"
         }
     ],
-    "contributors":[
-        
-    ],
-    "dependencies":{
-        
-    },
-    "devDependencies":{
-        
-    },
-    "installPaths":{
-        
-    },
+    "contributors":[],
+    "dependencies":{},
+    "devDependencies":{},
+    "installPaths":{},
     "ignore":[
         "**/.*",
         "tests",
