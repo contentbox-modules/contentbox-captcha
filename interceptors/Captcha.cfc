@@ -22,21 +22,18 @@ component extends="coldbox.system.Interceptor" {
         * Add captcha to comment form
         */
         function cbui_postCommentForm( event, interceptData, buffer, rc, prc ){
-            // Only show if not logged in.
-            if( !prc.oCurrentAuthor.isLoggedIn() ){
-                buffer.append("
-                    <img src='#event.buildLink( 'contentbox-captcha' )#' />
-                    
-                    #HTMLHelper.textField(
-                        name			= "captchacode",
-                        label			= "Enter the security code shown above:",
-                        required		= "required",
-                        class			= "form-control",
-                        groupWrapper	= "div class=form-group",
-                        size			= "50"
-                    )#
-                ");
-            }
+            buffer.append("
+                <img src='#event.buildLink( 'contentbox-captcha' )#' />
+                
+                #HTMLHelper.textField(
+                    name			= "captchacode",
+                    label			= "Enter the security code shown above:",
+                    required		= "required",
+                    class			= "form-control",
+                    groupWrapper	= "div class=form-group",
+                    size			= "50"
+                )#
+            ");
         }
     
         /**
