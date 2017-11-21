@@ -40,7 +40,7 @@ component extends="coldbox.system.Interceptor" {
         * intercept comment post to validate captcha
         */
         function cbui_preCommentPost( event, interceptData, buffer, rc, prc ){
-            // Only show if not logged in.
+            // Don't validate logged in users. Do a passthrough
             if( prc.oCurrentAuthor.isLoggedIn() ){
                 return;
             }
